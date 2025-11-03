@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nools Wier 18 - தமிழ் நூலகம்</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Welcome Page -->
+  <div id="welcome-page" class="page active">
+    <h1>📚 Nools Wier 18</h1>
+    <p>தமிழ் மின்ன்நூலகம்</p>
+  </div>
+
+  <!-- User Form -->
+  <div id="form-page" class="page hidden">
+    <h2>உங்கள் தகவலை நிரப்பவும்</h2>
+    <form id="userForm">
+      <input type="text" id="name" placeholder="பெயர்" required>
+      <input type="number" id="age" placeholder="வயது" required>
+      <select id="gender">
+        <option value="male">MALE</option>
+        <option value="female">FEMALE</option>
+        <option value="transgender">OTHERS</option>
+      </select>
+      <button type="submit">சமர்ப்பி</button>
+    </form>
+  </div>
+
+  <!-- Library Page -->
+  <div id="library-page" class="page hidden">
+    <h2 id="welcomeUser"></h2>
+    <input type="text" id="searchInput" placeholder="புத்தகத்தை தேடுங்கள்...">
+    <div id="categories"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

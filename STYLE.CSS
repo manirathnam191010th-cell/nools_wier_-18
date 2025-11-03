@@ -1,0 +1,70 @@
+body {
+  font-family: 'Latha', sans-serif;
+  text-align: center;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+  margin: 0;
+  height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.page { display: none; padding-top: 60px; }
+.page.active { display: block; }
+.hidden { display: none; }
+
+input, select, button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.book {
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 5px auto;
+  width: 70%;
+  color: #fff;
+  font-size: 18px;
+}
+
+.book:hover {
+  transform: scale(1.03);
+  background: rgba(255,255,255,0.3);
+}
+
+#searchInput {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
